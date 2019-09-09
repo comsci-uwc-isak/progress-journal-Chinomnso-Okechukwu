@@ -1,20 +1,34 @@
 #!/bin/bash
 
-#This is a menu for ISAK ramen shop
+#This is a menu for R1-10 Ramen shop
+#The user picks one, and the programs gives a price
 
-echo "Welcome to Ramen Shop"
-echo "########Menu########"
-echo "1. Ramen One 50Yen"
-echo "2. Ramen Two 75Yen"
+echo "Ramen 1: Spicy Ramen"
+echo "Ramen 2: Salty Ramen"
+echo "Ramen 3: Soy Ramen"
 
-#Message for the user
-echo "Select your Ramen and press ENTER"
-read enter
+echo -n "Pick a number between 1-3: "
+read ramNum
 
-if [ $enter -eq 1 ]; then
-        echo "You selected Ramen One. Pay 50Yen"
-elif [ $enter -eq 2 ]; then
-        echo "You selected Ramen Two. Pay 75Yen"
-else
-  echo "Option not valid"
+if [ $ramNum -eq 1 ]; then 
+       echo "You chose Spicy Ramen. Pay 15$"
+elif [ $ramNum -eq 2 ]; then
+       echo "You chose Salty Ramen. Pay 10$"
+elif [ $ramNum -eq 3 ]; then
+       echo "You chose Soy Ramen. Pay 9$"
+else 
+       echo "Not available. Pick number between 1-3"
+
 fi
+  echo " Tax "
+read ranNum
+
+if [ $ramNum -eq 1 ]; then
+       echo "Pay extra 3$"
+elif [ $ramNum -eq 2 ]; then
+       echo "Pay extra 4$"
+elif [ $ramNum -eq 3 ]; then
+       echo "Pay extra 5$"
+else 
+       echo "Not available. Pick number between 1-3"
+fi 
