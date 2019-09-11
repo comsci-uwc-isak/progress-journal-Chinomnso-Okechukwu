@@ -1,4 +1,4 @@
-\#!/bin/bash
+#!/bin/bash
 
 echo "The place to find your dream girl"
 echo "Enter your name and age"
