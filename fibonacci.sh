@@ -3,5 +3,20 @@
 echo "This is a program that shows the fibonacci series"
 
 start=0
+second=1
+third=1
+echo -n "Term: "
+read term
 
+fub=$((second+third))
+echo $second
+echo $third
+echo $fub
 
+for (( i=1; i<term; i++ ))
+do
+ third=$((fub+third))
+ echo $third
+ fub$((third+fub))
+ echo  $fub
+done
