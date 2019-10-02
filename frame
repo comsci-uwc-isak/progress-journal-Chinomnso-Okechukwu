@@ -1,0 +1,66 @@
+#!/bin/bash
+
+#This program produces a frame title text based on the arguments entered.
+
+word=$1
+leng=${#word}
+padding=3
+
+echo $len
+
+#;ength of the frame
+width=50
+(( spaces=$width/2-$len/2-1 ))
+echo $spaces
+
+for (( i=0;i<$width;i++ ))
+do 
+	echo -n "*"
+done
+echo " "
+
+#prints the padding
+for (( p=1;p<adding;p++ ))
+do
+	echo -n "*"
+	for (( s=0;s<$width-2;s++ ))
+	do 
+		echo -n " "
+	done
+	echo "*"
+done
+
+echo -n "*"
+for (( s=0;s<spaces;s++ ))
+do 
+	echo -n " "
+done
+echo -n $word
+
+for (( s=0;s<spaces;s++ ))
+do
+	echo -n " "
+done 
+echo "*"
+
+#prints the padding
+for (( p=0;p<$padding1;p++ ))
+do
+	echo -n "*"
+	for (( s=0;s<$width-2;s++ ))
+	do
+		echo -n " "
+	done
+	echo "*"
+done
+
+#print bottom frame 
+for (( i=0;i<$width;i++ ))
+do
+	echo -n "*"
+done
+echo " " #this is for going down one line 
+
+ 
+ 
+
